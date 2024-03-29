@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/banner_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Unit Convert App"
+        android:textColor="@color/teal_700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_text"
+        android:layout_marginTop="16dp"
+        android:text="Type"
+        android:textColor="@color/teal_700"
+        android:textSize="21sp"
+
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/type_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/type_label"
+        android:layout_marginTop="8dp"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/source_unit_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_spinner"
+        android:layout_marginTop="16dp"
+        android:text="Source Unit"
+        android:textColor="@color/teal_700"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/source_unit_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/source_unit_label"
+        android:layout_marginTop="8dp"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/destination_unit_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/source_unit_spinner"
+        android:layout_marginTop="16dp"
+        android:text="Destination Unit"
+        android:textColor="@color/teal_700"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/destination_unit_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/destination_unit_label"
+        android:layout_marginTop="8dp"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/value_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/destination_unit_spinner"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Value"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/value_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/result_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convert_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Result"
+        android:textColor="@color/teal_700"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

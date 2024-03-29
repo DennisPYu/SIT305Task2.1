@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="conversion_types">
+        <item>Weight</item>
+        <item>Length</item>
+        <item>Temperature</item>
+    </string-array>
+
+    <string-array name="weight_options">
+        <item>Gram (g)</item>
+        <item>Kilogram (kg)</item>
+        <item>Ton (t)</item>
+        <item>Ounce (oz)</item>
+        <item>Pound (lb)</item>
+    </string-array>
+
+    <string-array name="length_options">
+        <item>Centimeter (cm)</item>
+        <item>Meter (m)</item>
+        <item>Kilometer (km)</item>
+        <item>Inch (in)</item>
+        <item>Foot (ft)</item>
+        <item>Yard (yd)</item>
+        <item>Mile (mi)</item>
+    </string-array>
+
+    <string-array name="temperature_options">
+        <item>Celsius (°C)</item>
+        <item>Fahrenheit (°F)</item>
+        <item>Kelvin (K)</item>
+    </string-array>
+</resources>
